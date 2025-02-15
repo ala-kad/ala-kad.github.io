@@ -15,8 +15,6 @@
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <script src="https://kit.fontawesome.com/f65f75b241.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -64,13 +62,14 @@
 
   <!-- Main content -->
   <main>
+    <!-- About Section -->
     <section id="about" class="about-me container mt-5 mb-5">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
           <img class="img-fluid" src="./assets/images/1687538058180.jpg" alt="Ala kaddechi smiling and standing up" />
         </div>
         <div class="col-lg-8 col-md-6 col-sm-12">
-          <h2 class="heading">About me</h2>
+          <h2 class="heading title-underlined">About me</h2>
           <p class="description">
             I am Ala, a Software Engineer from Tunisia graduated from 
             Tek-Up University, faculty of engineering, branch of computer and
@@ -120,12 +119,33 @@
         </div>
       </div>
     </section>
-
+    <!-- Education Section -->
+    <section id="education" class="education container mt-5 mb-5">
+      <h2 class="title-underlined">Education</h2>
+      <div class="wrapper">
+        <div class="education-1 box">
+          <h3>Master of Software Engineering Degree</h3>
+          <h6>2024</h6>
+          <p>
+            <em><strong>Tek-Up University</strong>, Faculty of Engineering, Branch of Computer and
+            Software Engineering.
+            </em>
+          </p>
+        </div>
+        <div class="eudcation-2 box">
+          <h3>Bachelor degree in Computer Science</h3>
+          <h6>2019</h6>
+          <p>
+            <em><strong>Higher institute of Informatics and Management </strong> Al-Qayrawan University </em>
+          </p>
+        </div>
+      </div>
+    </section>
     <!-- Experience Section -->
-    <section id="experience" class="container">
+    <section id="experience" class="container mt-5 mb-5">
       <div class="row">
         <div class="col-12">
-          <h2>Proffesional Experience</h2>
+          <h2 class="title-underlined">Proffesional Experience</h2>
           <h5>
             UI/UX Designer intern <br />
             Aug 2023 - Sep 2023
@@ -177,24 +197,8 @@
         </div>
       </div>
     </section>
-
-    <!-- <div class="row">
-          <h2>Academic journey</h2>
-          <div class="col-sm-6">
-            <h5>2021 - 2024</h5>
-            <p>
-              Tek-up University, Faculty of Engineering, Branch of Computer and Software Engineering.
-            </p>
-          </div>
-          <div class="col-sm-6">
-              <h5>2016 - 2019</h5>
-              <p>
-                Higher institute of Informatics and Management. Bachelor degree in computer science.
-              </p>
-          </div>
-        </div> -->
     <!-- Contact Section -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route mt-5 mb-5"
       style="background-image: url(./assets/images/overlay-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container">
@@ -310,7 +314,6 @@
         </div>
       </div>
     </section>
-    <!-- End Contact Section -->
   </main>
   <footer class="bg-dark p-4">
     <div class="text-center text-white">
@@ -336,7 +339,6 @@
            </a>
         </div> -->
   </footer>
-
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
