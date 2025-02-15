@@ -79,9 +79,55 @@ html {
   font-weight: 400;
 }
 
-.overlay-mf {
-  background-color: #0078ff;
+/*--------------------------------------------------------------
+# Education Styles
+--------------------------------------------------------------*/
+.education .wrapper{
+  display: grid;  
+  gap: 20px;
+  grid-template-columns: auto auto;
+  align-items: center;
+  height: auto;
 }
+/* .education h2{ 
+  text-decoration: underline;
+  text-decoration-color: #0078ff;
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+} */
+
+
+
+.education .wrapper > .box {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  background-color: #fff;
+  border: 0.5px solid #000;
+  border-radius: 8%;
+  box-shadow: 10px 10px 8px 10px #888888;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .education .wrapper{
+    padding: 8px;
+    grid-template-columns: auto ;
+    align-items: center;
+  }
+  .education .wrapper > .box {
+    padding: 0px 10px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .education .wrapper > .box {
+    padding: 0px 12px;
+    font-size: 18px;
+  }
+}
+
 
 .overlay-mf {
   position: absolute;
