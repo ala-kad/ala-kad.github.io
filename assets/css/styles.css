@@ -1,14 +1,24 @@
 /*--------------------------------------------------------------
 # Global Styles
 --------------------------------------------------------------*/
-
-
-/* Gorgia Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=Kalam:wght@300;400;700&family=Charm:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
+
+.title-underlined {
+  position: relative;
+}
+.title-underlined::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -2px;
+}
+
 
 /*--------------------------------------------------------------
 # Header
