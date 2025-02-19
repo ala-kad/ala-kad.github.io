@@ -36,39 +36,32 @@
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# Header
+# Header Styles
 --------------------------------------------------------------*/
 #header {
-  padding: 0;
-  margin: 0;
   position: sticky;
   top: 0px; 
   z-index: 10;
 }
-
 #header .navbar-toggler:focus {
   box-shadow: none;
 }
-
 #header .navbar-toggler:focus-visible{
   outline: none;
 }
-
-#header .navbar .nav-item a:hover{
+#header .navbar .navbar-nav .nav-link:active,
+#header .navbar .navbar-nav .nav-link:hover{
   text-decoration: underline;
+  color: #0078ff;
 }
-
-#header .navbar .navbar-brand .brand-title{
-  font-family: "Charm", serif ;
-  font-weight: 700;
-  font-style: normal;
-}
-
-#header .navbar .right-navbar .navbar-nav .nav-link{
+#header .navbar .navbar-nav .nav-link{
   font-family: "Kalam", sans-serif;
-  font-style: italic;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 25px;
 }
+/*--------------------------------------------------------------
+# Header Styles Ends
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # About-me
