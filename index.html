@@ -71,9 +71,9 @@
   </header>
   <!-- Header Ends -->
   <!-- Main content -->
-  <main>
+    <main class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" tabindex="0">
     <!-- About Section -->
-    <section id="about" class="about-me container mt-5 mb-5">
+      <section id="about" class="about-me container mt-5 mb-5" >
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
           <img class="img-fluid" src="./assets/images/1687538058180.jpg" alt="Ala kaddechi smiling and standing up" />
@@ -118,20 +118,23 @@
               </a>
             </li>
           </ul>
-          <div class="skills">
-            <h2 class="heading mt-auto">My skills</h2>
-            <ul class="skills-list">
-              <li class="skill">HTML</li>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="container mt-5 mb-5">
+        <h2 class="heading title-underlined">My skills</h2>
+          <div>
+            <ul>
+              <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
           </div>
-        </div>
-      </div>
+        
     </section>
     <!-- Education Section -->
     <section id="education" class="education container mt-5 mb-5">
-      <h2 class="title-underlined">Education</h2>
+        <h2 class="title-underlined heading">Education</h2>
       <div class="wrapper">
         <div class="education-1 box">
           <h3>Master of Software Engineering Degree</h3>
@@ -155,7 +158,7 @@
     <section id="experience" class="container mt-5 mb-5">
       <div class="row">
         <div class="col-12">
-          <h2 class="title-underlined">Proffesional Experience</h2>
+            <h2 class="title-underlined heading">Proffesional Experience</h2>
           <h5>
             UI/UX Designer intern <br />
             Aug 2023 - Sep 2023
@@ -209,7 +212,7 @@
     </section>
     <!-- Contact Section -->
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route mt-5 mb-5"
-      style="background-image: url(./assets/images/overlay-bg.jpg)">
+        style="background-image: url(./assets/images/overlay-bg.jpg)" >
       <div class="overlay-mf"></div>
       <div class="container">
         <div class="row">
@@ -222,7 +225,7 @@
                       <h5 class="title-left">Send Message Us</h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form action="contact.php" method="post" role="form" class="php-email-form">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -325,6 +328,8 @@
       </div>
     </section>
   </main>
+    <!-- Main Ends -->
+    <!-- Footer -->
   <footer class="bg-dark p-4">
     <div class="text-center text-white">
       <p>
@@ -349,7 +354,7 @@
            </a>
         </div> -->
   </footer>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- Footer Ends -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
