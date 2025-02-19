@@ -3,8 +3,10 @@
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=Kalam:wght@300;400;700&family=Charm:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
 
-html {
+*, html {
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 .title-underlined {
@@ -19,6 +21,19 @@ html {
   bottom: -2px;
 }
 
+.heading { 
+  font-family: 'Charm', 'Inria Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+/*--------------------------------------------------------------
+# Global Styles Ends
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Header
