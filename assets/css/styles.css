@@ -77,8 +77,33 @@
   font-family: 'Charm', 'Inria Sans', sans-serif;
   font-weight: 400;
 }
+
 /*--------------------------------------------------------------
-# About-me Styles Ends
+# Skills Section Styles
+--------------------------------------------------------------*/
+#skills .nav .nav-link{ 
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: 700;
+}
+
+#skills .tab-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #skills .tab-content ul {
+    padding: 0;
+    margin: auto;
+  }
+  #skills .tab-content ul li {
+    text-align: center;
+    margin: auto;
+    padding: 0px;
+  }
+}
+/*--------------------------------------------------------------
+# End
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
