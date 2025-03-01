@@ -74,8 +74,10 @@
  color: #1b1b1b;
 }
 .about-me .description {
-  font-family: 'Charm', 'Inria Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Inria Sans', sans-serif;
+  text-align: left;
+  word-break: break-word;
+  font-size: 50 vw;
 }
 
 /*--------------------------------------------------------------
