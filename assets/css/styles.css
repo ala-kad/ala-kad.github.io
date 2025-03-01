@@ -112,36 +112,46 @@
 .education .wrapper{
   display: grid;  
   gap: 20px;
-  grid-template-columns: auto auto;
-  align-items: center;
-  height: auto;
+  grid-template-columns: repeat(2, 1fr); ;
 }
 .education .wrapper > .box {
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-  background-color: #fff;
-  border: 0.5px solid #000;
-  border-radius: 8%;
-  box-shadow: 10px 10px 8px 10px #888888;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border: 2px solid #3d3d3d;
+  border-radius: 25px;
+  box-shadow: 10px 10px 8px 10px #8d8c8c;
   height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #1b1b1b;
 }
+.education .wrapper > .box:hover{
+  transition: transform  2s 0.5s linear;
+  transform: scale(1.05);
+}
+
+.education .wrapper > .box > h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0078ff;
+}
+.education .wrapper > .box > h6{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.education .wrapper > .box > p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
 @media only screen and (max-width: 600px) {
   .education .wrapper{
-    padding: 8px;
     grid-template-columns: auto ;
-    align-items: center;
-  }
-  .education .wrapper > .box {
-    padding: 0px 10px;
-    font-size: 18px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .education .wrapper > .box {
-    padding: 0px 12px;
-    font-size: 18px;
-  }
 }
 /*--------------------------------------------------------------
 # Education Styles Ends
