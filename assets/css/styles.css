@@ -26,13 +26,19 @@
   font-weight: 700;
   font-size: 2.5rem;
 }
+
+ol,
+ul {
+  padding-left: 0px !important;
+}
+
 @media only screen and (max-width: 600px) {
   .heading {
     font-size: 2rem;
   }
 }
 /*--------------------------------------------------------------
-# Global Styles Ends
+#  End
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -60,25 +66,69 @@
   font-size: 25px;
 }
 /*--------------------------------------------------------------
-# Header Styles Ends
+#  End
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # About-me Styles
 --------------------------------------------------------------*/
-.about-me img {
+#about-me img {
   margin-bottom: 1rem;
 }
-.about-me a {
- text-decoration: none;
- color: #1b1b1b;
-}
-.about-me .description {
+#about-me .description {
   font-family: 'Inria Sans', sans-serif;
   text-align: left;
   word-break: break-word;
   font-size: 18px;
 }
+#about-me .socials{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+#about-me .socials li {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+#about-me .socials li a{
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me .description {
+    font-size: 16px;
+  }
+  #about-me .socials{
+    justify-content: center;
+    gap: 8px;
+    flex-direction: column;
+  }
+  #about-me .socials li a img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #about-me .row{
+    align-items: center;
+    justify-content: center;
+  }
+  #about-me .socials{
+    justify-content: space-around;
+    gap: 8px;
+  }
+  #about-me .socials li a img{
+    width: 50px;
+    height: 50px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Skills Section Styles
@@ -128,6 +178,7 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   color: #1b1b1b;
+  cursor: pointer;
 }
 .education .wrapper > .box:hover{
   transition: transform  2s 0.5s linear;
@@ -149,6 +200,7 @@
 }
 
 @media only screen and (max-width: 600px) {
+  
   .education .wrapper{
     grid-template-columns: auto ;
   }
