@@ -179,7 +179,7 @@ ul {
   background-color: #ffffff;
   border: 2px solid #3d3d3d;
   border-radius: 25px;
-  box-shadow: 10px 10px 8px 10px #8d8c8c;
+  box-shadow: 10px 10px 0px -5px #8d8c8c;
   height: 100%;
   width: 100%;
   font-family: 'Raleway', sans-serif;
@@ -211,8 +211,6 @@ ul {
   .education .wrapper{
     grid-template-columns: auto ;
   }
-}
-@media only screen and (max-width: 768px) {
 }
 /*--------------------------------------------------------------
 # Education Styles Ends
