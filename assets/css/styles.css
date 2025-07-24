@@ -173,6 +173,7 @@ ul {
   gap: 20px;
   grid-template-columns: repeat(2, 1fr); ;
 }
+
 .education .wrapper > .box {
   text-align: center;
   padding: 8px 12px;
@@ -186,10 +187,11 @@ ul {
   font-weight: 500;
   color: #1b1b1b;
   cursor: pointer;
+  transition: transform 2s ease-in-out;
 }
+
 .education .wrapper > .box:hover{
-  transition: transform  2s 0.5s linear;
-  transform: scale(1.05);
+  transform: scale(0.5,0.5) rotate(360deg);
 }
 
 .education .wrapper > .box > h3 {
@@ -197,17 +199,18 @@ ul {
   font-size: 1.5rem;
   color: #0078ff;
 }
+
 .education .wrapper > .box > h6{
   font-weight: 400;
   font-size: 1.2rem;
 }
+
 .education .wrapper > .box > p {
   font-weight: 400;
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
-  
+@media only screen and (max-width: 768px) {
   .education .wrapper{
     grid-template-columns: auto ;
   }
@@ -419,6 +422,12 @@ ul {
 # Contact Styles Ends
 --------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Projects Styles
+--------------------------------------------------------------*/
+#projects .card .card-img-top{
+  object-fit: cover;
+}
 
 /*--------------------------------------------------------------
 # Back to Top Button
