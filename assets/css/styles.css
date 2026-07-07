@@ -27,6 +27,51 @@
   margin: 0;
 }
 
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: 'Inria Sans', sans-serif;
+  line-height: 1.6;
+  color: #1f1f1f;
+  background-color: #fff;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid #0078ff;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 .title-underlined {
   position: relative;
 }
@@ -141,6 +186,32 @@ ul {
   display: block;
 }
 
+#about-me .cv-btn{
+  display: inline-block;
+  min-width: 150px;
+  padding: 12px 24px;
+  background-color: #007bff; /* Primary color */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#about-me .cv-btn:hover{
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+/* @media only screen and (min-width: 992px) {
+  #about-me .cv-btn {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+} */
+
 @media only screen and (max-width: 600px) {
   .about-me .description {
     font-size: 16px;
@@ -194,7 +265,7 @@ ul {
 .education .wrapper{
   display: grid;  
   gap: 20px;
-  grid-template-columns: repeat(2, 1fr); ;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .education .wrapper > .box {
@@ -214,7 +285,7 @@ ul {
 }
 
 .education .wrapper > .box:hover{
-  transform: scale(0.5,0.5) rotate(360deg);
+  transform: translateY(-4px);
 }
 
 .education .wrapper > .box > h3 {
